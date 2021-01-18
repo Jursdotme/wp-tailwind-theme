@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.entry-content .alignwide {
+  max-width: 100vw;
+  margin-left: -16rem;
+  margin-right: -16rem;
+}
+.entry-content .alignfull {
+  margin-left: calc(-100vw / 2 + 100% / 2);
+  margin-right: calc(-100vw / 2 + 100% / 2);
+  max-width: 100vw;
+}
+.alignfull img {
+  width: 100vw;
+}
+
+.blocks-gallery-item {
+  padding-left: 0 !important;
+}
+
+.blocks-gallery-item:before {
+  display: none;
+}
+
+.wp-block-group__inner-container {
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+.has-background {
+  @apply p-16;
+}
+
+.wp-block-image .aligncenter {
+  @apply block overflow-hidden rounded-lg shadow-lg;
+}
+
+.size-full img {
+  @apply w-full;
+}
